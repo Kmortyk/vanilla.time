@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="340dp"
+    android:orientation="vertical"
+    android:background="#b1adac">
+
+    <View
+        android:id="@+id/color_view"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <SeekBar
+            android:id="@+id/red_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:max="255" />
+
+        <SeekBar
+            android:id="@+id/green_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/red_seek_bar"
+            android:layout_marginTop="8dp"
+            android:max="255" />
+
+        <SeekBar
+            android:id="@+id/blue_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/green_seek_bar"
+            android:layout_marginTop="8dp"
+            android:max="255" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/hex_edit_text"
+            android:layout_marginStart="11dp"
+            android:layout_marginBottom="0dp"
+            android:labelFor="@id/hex_edit_text"
+            android:text="#"
+            android:textColor="#090909"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@id/hex_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:layout_alignBottom="@+id/cancel_button"
+            android:layout_marginStart="19dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_background_selector"
+            android:lines="1"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:paddingStart="1dp"
+            android:paddingBottom="0dp"
+            android:textColor="#090909"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp"
+            tools:text="FFFFFF" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/accept_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blue_seek_bar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#b1adac"
+            android:text="Ok"
+            android:textSize="14sp" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blue_seek_bar"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_toStartOf="@+id/accept_button"
+            android:background="#b1adac"
+            android:text="Cancel"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

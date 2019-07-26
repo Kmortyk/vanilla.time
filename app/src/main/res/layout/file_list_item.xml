@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:rv_centered="true"
+    app:rv_framerate="2"
+    app:rv_rippleDuration="40"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/file_list_item_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="File name"
+                android:minHeight="30dp"
+                android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/file_list_item_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="dd.mm.yyyy"
+            android:textAlignment="textEnd"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</com.andexert.library.RippleView>

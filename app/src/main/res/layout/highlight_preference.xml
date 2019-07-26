@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/listPreferredItemHeightSmall"
+    android:gravity="center_vertical"
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:clipToPadding="false"
+    android:baselineAligned="false">
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/icon_frame"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="-4dp"-->
+        <!--android:gravity="start|center_vertical"-->
+        <!--android:minWidth="60dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingTop="4dp"-->
+        <!--android:paddingEnd="12dp"-->
+        <!--android:paddingBottom="4dp">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/icon"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:maxWidth="48dp"-->
+            <!--android:maxHeight="48dp" />-->
+
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@android:id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Hello!"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#40000000" />
+
+        <TextView
+            android:id="@+id/title_highlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@android:id/title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="-0dp"
+            android:background="@null"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Hello!"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/clear_all" />
+
+        <TextView android:id="@android:id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@android:id/title"
+            android:layout_alignStart="@android:id/title"
+            android:textAppearance="?attr/textAppearanceListItemSecondary"
+            android:textColor="?android:attr/textColorSecondary"
+            android:maxLines="10"
+            android:ellipsize="end" />
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/widget_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="end|center_vertical"
+        android:paddingStart="16dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

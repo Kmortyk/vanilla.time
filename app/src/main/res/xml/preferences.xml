@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <iss.vanilla.time.preference.CustomPreferenceCategory
+        android:key="preferences_category"
+        android:title="@string/preferences_title">
+
+        <iss.vanilla.time.preference.label.EditTextPreference
+            android:key="label"
+            android:title="Preferences"
+            android:layout="@layout/edit_text_preference"/>
+
+        <android.support.v7.preference.DropDownPreference
+            android:key="timer_type"
+            android:title="Timer type"
+            android:summary="%s"
+            android:entries="@array/pref_entries_timer_type"
+            android:entryValues="@array/pref_entries_timer_type"
+            android:defaultValue="0"
+            app:iconSpaceReserved="false"/>
+
+        <iss.vanilla.time.preference.color.ColorPickerPreference
+            android:key="background_color"
+            android:title="Background"/>
+
+        <iss.vanilla.time.preference.color.ColorPickerPreference
+            android:key="text_color"
+            android:title="Text color"/>
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:key="hours"
+            android:title="Hours"
+            app:iconSpaceReserved="false"/>
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:key="minutes"
+            android:title="Minutes"
+            app:iconSpaceReserved="false"/>
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:key="seconds"
+            android:title="Seconds"
+            app:iconSpaceReserved="false"/>
+
+        <iss.vanilla.time.preference.csv.ExportCSVPreference
+            android:key="export_csv"
+            android:title="Export CSV"
+            android:icon="@null"/>
+
+        <iss.vanilla.time.preference.delete.DeleteDataPreference
+            android:key="delete_data"
+            android:title="Delete Data"
+            android:icon="@null"/>
+
+    </iss.vanilla.time.preference.CustomPreferenceCategory>
+
+</android.support.v7.preference.PreferenceScreen>

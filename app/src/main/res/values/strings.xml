@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="app_name">Vanilla.Time</string>
+    <string name="preferences_title">Vanilla.Time</string>
+    <string name="timer_stub">hh:mm:ss</string>
+
+    <string name="label">Label</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="color_picker_hex_code_error">Wrong hex code</string>
+    <string name="color_picker_image_description">Color picker image</string>
+    <string name="clear_all_preference_dialog_title">Are you sure?</string>
+
+    <string name="dummy">Hello!</string>
+    <string name="cover">Cover</string>
+    <string name="reset_color">Reset color</string>
+    <string name="cancel">Cancel</string>
+    <string name="run_button_description">Run button</string>
+
+    <string-array name="pref_entries_timer_type">
+        <item>Count up</item>
+        <item>Cur. time</item>
+        <!--<item>Timer</item>-->
+    </string-array>
+
+</resources>

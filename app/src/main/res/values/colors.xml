@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#B1ADAC</color>
+    <color name="colorPrimaryDark">#090909</color>
+    <color name="colorAccent">#333333</color>
+    <color name="lightPrimary">#B1ADAC</color>
+    <color name="shadow">#090909</color>
+
+    <color name="export_csv">#005408</color>
+    <color name="clear_all">#b1012b</color>
+    <color name="category">#B1ADAC</color>
+
+    <color name="edit_text">#868686</color>
+    <color name="header_line">#727272</color>
+    <color name="header_color">#7BA0B1</color>
+    <color name="category_name">#CBCACA</color>
+
+    <!--004907-->
+    <!--#045202-->
+    <!--#a63333-->
+    <!--#b81120-->
+    <!--#FFFBC02D-->
+
+</resources>
